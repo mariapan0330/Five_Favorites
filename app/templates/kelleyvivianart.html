@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %} kelleyvivianart {% endblock title %}
+
+{% block link %}https://www.instagram.com/kelleyvivianart/{% endblock link %}
+
+{% block name %}kelleyvivianart{% endblock name %}
+
+{% block content %}
+<p class="text-center fs-5">Painter specializing in gouache landscapes.
+    <br>I love the thoughtful way she paints sunlight.
+    <br>(Thank you to <a href="https://www.youtube.com/watch?v=XTiM6HU0x9k" target="_blank">this guy</a> for help adding images with Flask.)</p>
+
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ kelley1 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ kelley2 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ kelley3 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ kelley4 }}" class="card-img-top p-3" alt="hey">
+      </div>
+    </div>
+  </div>
+{% endblock content %}

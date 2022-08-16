@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %} wood.youmind {% endblock title %}
+
+{% block link %}https://www.instagram.com/wood.youmind/{% endblock link %}
+
+{% block name %}wood.youmind{% endblock name %}
+
+{% block content %}
+<p class="text-center fs-5">He makes cute little figurines out of wood.
+    <br>I like the whimsical, slightly apathetic look of his pieces.
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ wood1 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ wood2 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ wood3 }}" class="card-img-top p-3" alt="...">
+      </div>
+    </div>
+    <div class="col px-3">
+      <div class="card">
+        <img src="{{ wood4 }}" class="card-img-top p-3" alt="hey">
+      </div>
+    </div>
+  </div>
+{% endblock content %}

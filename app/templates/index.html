@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Favorite Instagram Artists - Home {% endblock title %}
+
+{% block content %}
+<div class="col align-items-center">
+    {% for item in fav_5 %}
+        <div class="row align-items-center">
+            <a class="btn btn-outline-light text-center justify-content-center py-5 my-3 fw-bold" href="{{item}}" role="button" style="border:0px"><h2>{{ item }}</h2></a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}
